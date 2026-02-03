@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Planning & Guidance - BMC Educational Consultancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<style>
+:root {
+  --ink: #0b0e14;
+  --ink-soft: #1a1f2e;
+  --gold: #d4a94c;
+  --gold-hi: #f0d278;
+  --gold-lo: #a07828;
+  --cream: #f6f3ed;
+  --cream-hi: #fdfcf9;
+  --slate: #6b7280;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Outfit',sans-serif; background:var(--cream); color:var(--ink); line-height:1.6; }
+
+/* Navigation */
+.nav {
+  position:sticky; top:0; z-index:1000;
+  background:var(--ink); padding:1.2rem 3rem;
+  display:flex; align-items:center; justify-content:space-between;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+.nav-logo {
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.7rem; font-weight:700; color:#fff;
+  text-decoration:none; letter-spacing:-0.5px;
+}
+.nav-logo em { color:var(--gold); font-style:italic; }
+.nav-links {
+  display:flex; gap:2rem; list-style:none;
+}
+.nav-links a {
+  color:rgba(255,255,255,.6); text-decoration:none;
+  font-size:.82rem; font-weight:500; letter-spacing:1.2px;
+  text-transform:uppercase; transition:color .3s;
+}
+.nav-links a:hover { color:var(--gold); }
+
+/* Hero */
+.hero {
+  background:linear-gradient(135deg, var(--ink) 0%, #2d2d44 100%);
+  color:var(--cream); padding:6rem 3rem 4rem; text-align:center;
+}
+.hero h1 {
+  font-family:'Cormorant Garamond',serif;
+  font-size:3.5rem; font-weight:700; margin-bottom:1rem; color:var(--gold);
+}
+.hero p { font-size:1.2rem; max-width:700px; margin:0 auto; opacity:0.9; }
+
+/* Content */
+.content {
+  max-width:1200px; margin:4rem auto; padding:0 3rem;
+}
+.section { margin-bottom:4rem; }
+.section h2 {
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.5rem; color:var(--ink); margin-bottom:1.5rem;
+}
+.section h3 {
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.8rem; color:var(--gold); margin:2rem 0 1rem;
+}
+.section p { font-size:1.05rem; line-height:1.8; color:var(--slate); margin-bottom:1rem; }
+.section ul, .section ol {
+  margin-left:2rem; color:var(--slate);
+}
+.section li { margin-bottom:0.8rem; line-height:1.7; }
+
+/* Cards */
+.card-grid {
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  gap:2rem; margin:3rem 0;
+}
+.card {
+  background:#fff; padding:2.5rem; border-radius:12px;
+  box-shadow:0 4px 20px rgba(0,0,0,0.08);
+  transition:transform .3s, box-shadow .3s;
+}
+.card:hover {
+  transform:translateY(-5px);
+  box-shadow:0 6px 30px rgba(212,175,55,0.2);
+}
+.card h3 {
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.6rem; color:var(--gold); margin-bottom:1rem;
+}
+.card p { color:var(--slate); font-size:0.95rem; }
+
+/* CTA */
+.cta-box {
+  background:var(--ink); color:#fff;
+  padding:3rem; border-radius:16px; text-align:center; margin:4rem 0;
+}
+.cta-box h2 {
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.2rem; color:var(--gold); margin-bottom:1rem;
+}
+.cta-btn {
+  display:inline-block; margin-top:1.5rem;
+  padding:0.9rem 2.5rem; background:var(--gold); color:var(--ink);
+  text-decoration:none; border-radius:8px; font-weight:600;
+  transition:all .3s;
+}
+.cta-btn:hover {
+  background:var(--gold-hi);
+  box-shadow:0 6px 24px rgba(212,175,55,0.35);
+}
+
+/* Footer */
+footer {
+  background:var(--ink); color:rgba(255,255,255,.35);
+  padding:3rem 3rem 1.5rem; text-align:center;
+}
+.footer-links {
+  display:flex; justify-content:center; gap:2rem;
+  margin-bottom:1.5rem; flex-wrap:wrap;
+}
+.footer-links a {
+  color:rgba(255,255,255,.5); text-decoration:none;
+  font-size:0.85rem; transition:color .3s;
+}
+.footer-links a:hover { color:var(--gold); }
+.footer-bottom {
+  border-top:1px solid rgba(255,255,255,.1);
+  padding-top:1.5rem; font-size:0.85rem;
+}
+.footer-bottom span { display:block; margin:0.3rem 0; }
+
+@media(max-width:768px) {
+  .nav { padding:1rem 1.5rem; flex-direction:column; gap:1rem; }
+  .nav-links { flex-wrap:wrap; gap:1rem; justify-content:center; }
+  .hero { padding:4rem 1.5rem 3rem; }
+  .hero h1 { font-size:2.5rem; }
+  .content { padding:0 1.5rem; }
+  .card-grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo"><em>BMC</em> Educational</a>
+  <ul class="nav-links">
+    <li><a href="../index.html#services">Services</a></li>
+    <li><a href="../index.html#why">About</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>Career Planning & Guidance</h1>
+  <p>Expert guidance for your educational journey</p>
+</section>
+
+<div class="content">
+  <div class="section">
+    <h2>Design Your Future Career Path</h2>
+    <p>Choosing the right career path is one of the most important decisions you'll make. Our career planning services help you discover your strengths, explore potential career options, and create a strategic roadmap to achieve your professional goals.</p>
+  </div>
+
+  <div class="section">
+    <h3>Our Career Services</h3>
+    <div class="card-grid">
+      <div class="card">
+        <h3><i class="fas fa-compass"></i> Career Assessment</h3>
+        <p>Comprehensive personality, interest, and aptitude assessments to identify careers that match your unique profile.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-map-marked-alt"></i> Career Roadmapping</h3>
+        <p>Detailed action plans outlining the education, skills, and experiences needed to reach your career goals.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-graduation-cap"></i> Major Selection</h3>
+        <p>Expert guidance on choosing the right academic major aligned with your career aspirations and market trends.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-briefcase"></i> Industry Insights</h3>
+        <p>Up-to-date information on career prospects, salary ranges, and growth opportunities in various fields.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Popular Career Paths We Guide</h3>
+    <ol>
+      <li><strong>Technology & Engineering</strong> - Software development, data science, AI, mechanical engineering</li>
+      <li><strong>Business & Finance</strong> - MBA, accounting, investment banking, entrepreneurship</li>
+      <li><strong>Healthcare & Medicine</strong> - Medical school, nursing, pharmacy, public health</li>
+      <li><strong>Creative Industries</strong> - Design, architecture, media, digital marketing</li>
+      <li><strong>Law & Public Policy</strong> - Legal careers, international relations, public administration</li>
+      <li><strong>Sciences</strong> - Research, biotechnology, environmental science, chemistry</li>
+    </ol>
+  </div>
+
+  <div class="cta-box">
+    <h2>Start Your Career Journey Today</h2>
+    <p>Let's explore your potential and plan your path to success</p>
+    <a href="../index.html#contact" class="cta-btn">Book Consultation <i class="fas fa-arrow-right"></i></a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="../index.html">Home</a>
+    <a href="../index.html#services">Services</a>
+    <a href="../resources/student-blog.html">Blog</a>
+    <a href="../resources/faq.html">FAQ</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 BMC Educational Consultancy. All rights reserved.</span>
+    <span>Designed with passion for your future.</span>
+    <span>Developed by <a href="https://rachitpokhrel.com.np" target="_blank" style="color:var(--gold);">Rachit Pokhrel</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

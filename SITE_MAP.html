@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMC Website - Site Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #0b0e14;
+            color: #fff;
+            padding: 3rem;
+            line-height: 1.6
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: .5rem;
+            color: #d4a94c
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem;
+            color: #f0d278
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin: 1.5rem 0 .5rem;
+            color: #fff
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, .5);
+            margin-bottom: 3rem
+        }
+
+        .card {
+            background: rgba(255, 255, 255, .05);
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: all .3s
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, .08);
+            border-color: rgba(212, 169, 76, .3);
+            transform: translateX(4px)
+        }
+
+        .card h4 {
+            color: #d4a94c;
+            margin-bottom: .5rem;
+            font-size: 1.1rem
+        }
+
+        .card p {
+            color: rgba(255, 255, 255, .6);
+            font-size: .9rem;
+            margin-bottom: .5rem
+        }
+
+        .card a {
+            color: #d4a94c;
+            text-decoration: none;
+            font-size: .85rem;
+            display: inline-block;
+            margin-top: .5rem;
+            padding: .3rem .8rem;
+            border: 1px solid rgba(212, 169, 76, .3);
+            border-radius: 6px;
+            transition: all .3s
+        }
+
+        .card a:hover {
+            background: rgba(212, 169, 76, .15);
+            border-color: #d4a94c
+        }
+
+        .status {
+            display: inline-block;
+            padding: .25rem .6rem;
+            border-radius: 12px;
+            font-size: .75rem;
+            font-weight: 600
+        }
+
+        .status.complete {
+            background: rgba(74, 222, 128, .2);
+            color: #4ade80
+        }
+
+        .status.update {
+            background: rgba(251, 191, 36, .2);
+            color: #fbbf24
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0
+        }
+
+        .note {
+            background: rgba(251, 191, 36, .1);
+            border-left: 3px solid #fbbf24;
+            padding: 1rem 1.5rem;
+            border-radius: 6px;
+            margin: 2rem 0
+        }
+
+        .note strong {
+            color: #fbbf24
+        }
+
+        code {
+            background: rgba(255, 255, 255, .1);
+            padding: .2rem .5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: .9rem
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎓 BMC Educational Consultancy</h1>
+        <p class="subtitle">Complete Website Package - All Pages Created</p>
+
+        <div class="note">
+            <strong>⚠️ Important:</strong> The main <code>index.html</code> needs two quick updates in the footer (see
+            instructions below). All other pages are 100% complete and ready to use!
+        </div>
+
+        <h2>📄 Main Page</h2>
+        <div class="card">
+            <h4>Homepage <span class="status update">Update Required</span></h4>
+            <p>The beautiful main landing page with hero section, services, testimonials, and more.</p>
+            <p><strong>File:</strong> index.html</p>
+            <p><strong>Action Needed:</strong> Add developer credit and update footer links (see
+                FOOTER_UPDATE_INSTRUCTIONS.txt)</p>
+            <a href="index.html" target="_blank">View Page →</a>
+        </div>
+
+        <h2>🎯 Service Pages (5 pages)</h2>
+        <div class="grid">
+            <div class="card">
+                <h4>Essay Writing <span class="status complete">✓ Complete</span></h4>
+                <p>Application & Essay Writing Services - Personal statements, supplemental essays, and more.</p>
+                <a href="services/essay-writing.html" target="_blank">View Page →</a>
+            </div>
+
+            <div class="card">
+                <h4>IELTS Coaching <span class="status complete">✓ Complete</span></h4>
+                <p>Complete IELTS preparation covering all four modules with certified instructors.</p>
+                <a href="services/ielts-coaching.html" target="_blank">View Page →</a>
+            </div>
+
+            <div class="card">
+                <h4>Visa Support <span class="status complete">✓ Complete</span></h4>
+                <p>Comprehensive visa and immigration support for multiple countries.</p>
+                <a href="services/visa-support.html" target="_blank">View Page →</a>
+            </div>
+
+            <div class="card">
+                <h4>Career Planning <span class="status complete">✓ Complete</span></h4>
+                <p>Strategic career path planning with psychometric testing and industry insights.</p>
+                <a href="services/career-planning.html" target="_blank">View Page →</a>
+            </div>
+
+            <div class="card">
+                <h4>University Placement <span class="status complete">✓ Complete</span></h4>
+                <p>Complete university application and placement services worldwide.</p>
+                <a href="services/university-placement.html" target="_blank">View Page →</a>
+            </div>
+        </div>
+
+        <h2>📚 Resource Pages (7 pages)</h2>
+        <div class="grid">
+            <div class="card">
+                <h4>Free Guide Download <span class="status complete">✓ Complete</span></h4>
+                <p>6 comprehensive educational guides available for download.</p>
+                <a href="resources/free-guide.html" target="_blank">View Page →</a>
+            </div>
+
+            <div class="card">
+                <h4>Student Blog <span class="status complete">✓ Complete</span></h4>
+                <p>Engaging blog articles with student experiences and educational tips.</p>
+                <a href="resources/student-blog.html" target="_blank">View Page →</a>
+            </div>
+
+            <div class="card">
+                <h4>Scholarship Database <span class="status complete">✓ Complete</span></h4>
+                <p>Searchable database of major international scholarships.</p>
+                <a href="resources/scholarship-db.html" target="_blank">View Page →</a>
+            </div>
+
+            <div class="card">
+                <h4>FAQ <span class="status complete">✓ Complete</span></h4>
+                <p>Frequently asked questions with interactive accordion answers.</p>
+                <a href="resources/faq.html" target="_blank">View Page →</a>
+            </div>
+
+            <div class="card">
+                <h4>Privacy Policy <span class="status complete">✓ Complete</span></h4>
+                <p>Comprehensive, legally-sound privacy policy documentation.</p>
+                <a href="resources/privacy-policy.html" target="_blank">View Page →</a>
+            </div>
+
+            <div class="card">
+                <h4>Blog (Alt) <span class="status complete">✓ Complete</span></h4>
+                <p>Alternative blog layout with featured articles.</p>
+                <a href="resources/blog.html" target="_blank">View Page →</a>
+            </div>
+
+            <div class="card">
+                <h4>Scholarships (Alt) <span class="status complete">✓ Complete</span></h4>
+                <p>Alternative scholarship listing page.</p>
+                <a href="resources/scholarships.html" target="_blank">View Page →</a>
+            </div>
+        </div>
+
+        <h2>📋 Documentation Files</h2>
+        <div class="grid">
+            <div class="card">
+                <h4>Complete Website Guide</h4>
+                <p>Full documentation including deployment instructions and customization notes.</p>
+                <a href="COMPLETE_WEBSITE_GUIDE.md" target="_blank">Read Guide →</a>
+            </div>
+
+            <div class="card">
+                <h4>Footer Update Instructions</h4>
+                <p>Step-by-step instructions for updating the index.html footer.</p>
+                <a href="FOOTER_UPDATE_INSTRUCTIONS.txt" target="_blank">Read Instructions →</a>
+            </div>
+
+            <div class="card">
+                <h4>README</h4>
+                <p>Project overview and structure documentation.</p>
+                <a href="README.md" target="_blank">Read README →</a>
+            </div>
+        </div>
+
+        <h2>✨ Features</h2>
+        <ul style="margin:1rem 0 1rem 2rem;color:rgba(255,255,255,.7)">
+            <li>✓ 13 total pages (1 main + 5 services + 7 resources)</li>
+            <li>✓ Consistent BMC branding across all pages</li>
+            <li>✓ Fully responsive design for mobile devices</li>
+            <li>✓ Professional, conversion-focused content</li>
+            <li>✓ Interactive elements (FAQ accordion, hover effects)</li>
+            <li>✓ SEO-friendly structure with proper headings</li>
+            <li>✓ Fast-loading, optimized CSS</li>
+            <li>✓ Developer credit included in all pages</li>
+        </ul>
+
+        <h2>🚀 Next Steps</h2>
+        <ol style="margin:1rem 0 1rem 2rem;color:rgba(255,255,255,.7);line-height:2">
+            <li>Update <code>index.html</code> footer (see FOOTER_UPDATE_INSTRUCTIONS.txt)</li>
+            <li>Upload all files to your web server</li>
+            <li>Test all navigation links</li>
+            <li>Verify mobile responsiveness</li>
+            <li>Launch your website! 🎉</li>
+        </ol>
+
+        <div
+            style="margin-top:4rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.1);text-align:center;color:rgba(255,255,255,.4);font-size:.9rem">
+            <p>Website developed by <strong style="color:#d4a94c">Rachit Pokhrel</strong></p>
+            <p><a href="https://rachitpokhrel.com.np" style="color:#d4a94c;text-decoration:none"
+                    target="_blank">rachitpokhrel.com.np</a></p>
+            <p style="margin-top:1rem">© 2026 BMC Educational Consultancy. All rights reserved.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
